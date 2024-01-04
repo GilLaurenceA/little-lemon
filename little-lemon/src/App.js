@@ -9,9 +9,7 @@ import {
 import { AppProvider, ThemeProvider } from './context';
 import { Header, Footer } from './components';
 import './App.css';
-import { Home } from './pages/Home/Home.jsx';
-import { BookingPage } from './pages/Booking';
-import { ConfirmedBooking } from '.pages/Booking/pages/ConfirmedBooking';
+import { Home, BookingPage, ConfirmedBooking } from './pages';
 
 const Root = () => {
   return (
@@ -28,7 +26,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<Root />}>
       <Route index element={<Home />} />
       <Route path="bookings" element={<BookingPage />}>
-        <Route path="thank-you" element={<ConfirmedBooking />} />
+      <Route path="thank-you" element={<ConfirmedBooking />} />
       </Route>
     </Route>
   )
@@ -42,10 +40,10 @@ function App() {
     switch (type) {
       case 'setPreviousLocation': {
         return {
-          // ...state,
-          // previousLocation: [...state.previousLocation]
-          //   .slice(0, 1)
-          //   .push(payload),
+           ...state,
+           previousLocation: [...state.previousLocation]
+             .slice(0, 1)
+             .push(payload),
         };
       }
 

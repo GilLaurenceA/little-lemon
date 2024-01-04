@@ -9,7 +9,9 @@ import {
 import { AppProvider, ThemeProvider } from './context';
 import { Header, Footer } from './components';
 import './App.css';
-import { Home, BookingPage, ConfirmedBooking } from './pages';
+import { Home } from './pages/Home/Home.jsx';
+import { BookingPage } from './pages/Booking';
+import { ConfirmedBooking } from '.pages/Booking/pages/ConfirmedBooking';
 
 const Root = () => {
   return (

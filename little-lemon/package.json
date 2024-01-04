@@ -2,6 +2,9 @@
   "name": "little-lemon",
   "version": "0.1.0",
   "private": true,
+  "author": "Gil Laurence Aranco (gilaranco24@gmail.com)",
+  "main": "index.js",
+  "respository": "https://github.com/GilLaurenceA/little-lemon.git",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
